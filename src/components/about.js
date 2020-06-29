@@ -3,8 +3,8 @@ import React from 'react';
 function About(){
     return (
         <div className="contact-jt jumbotron">
-            <span className="display-4">About</span><br/>
-            <h3 className="lead">This is just a Recipe app which i built just for practice...</h3>
+            <span className="display-4"><b>About</b></span><br/>
+            <h3 className="lead"><b>This is just a Recipe app which uses React for client-side...</b></h3>
         </div>
     );
 }

@@ -1,3 +1,27 @@
-.contact-jt{
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.contact-jt {
     margin: 50px 30px;
+}
+
+.contact-info {
+    padding-left: 13px;
+}
+
+.navs {
+    font-size: larger;
+    color: white;
+}
+.navs:hover {
+    color: cyan;
+}
+
+.icons {
+    font-size: xx-large;
+    margin-left: 13px;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
 }
