@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{Component} from 'react';
+import Recipe from './recipe';
+import {db} from './db';
 
-function Todo() {
-    return (
-        <React.Fragment>
-            <h2>Todos</h2>
-        </React.Fragment>
-    );
+class Todo extends Component {
+
+    render() {
+        return (
+            <div className="card-flex">
+                <Recipe data={db} />
+            </div>
+        );
+    }
 }
 
 export default Todo;
