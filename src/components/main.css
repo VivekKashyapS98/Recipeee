@@ -25,3 +25,14 @@
     font-family: 'Pacifico', cursive;
     font-size: xx-large;
 }
+
+.card-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.cardsize {
+    margin: 20px;
+    padding: 20px;
+}
