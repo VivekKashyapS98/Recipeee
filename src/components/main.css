@@ -31,8 +31,11 @@
     flex-wrap: wrap;
 }
 
-
 .cardsize {
     margin: 20px;
     padding: 20px;
+}
+.add-recipee {
+    margin: 3vh;
+    text-align: center;
 }
