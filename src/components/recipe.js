@@ -43,15 +43,21 @@ class Recipe extends Component {
             ]
         }
         this.addNewRecipe = this.addNewRecipe.bind(this);
+        this.removeCard = this.removeCard.bind(this);
     }
 
     addNewRecipe(obj) {
         this.setState({db: [...this.state.db, obj]});
     }
+    removeCard(index) {
+        this.setState({db: this.state.db.filter((val,ind) => {
+            return index !== ind;
+        })});
+    }
 
     render() {
         const todos = this.state.db.map((item, ind) => (
-                <Card key={ind} info={item} />
+                <Card removeCard={() => this.removeCard(ind)} key={ind} info={item} />
         ));
         return (
             <React.Fragment>

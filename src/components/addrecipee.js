@@ -40,15 +40,15 @@ class Addrecipee extends Component {
                     <form onSubmit={this.handleSubmit} class="jumbotron">
                         <div className="form-group row">
                             <label className="col-sm-2 col-form-label" for="recipeename">Name</label>
-                            <input id="recipeename" type="text" className="col-sm-10 form-control" name="name" onChange={this.changeState} />
+                            <input id="recipeename" type="text" className="col-sm-10 form-control" name="name" value={this.state.name} onChange={this.changeState} />
                         </div>
                         <div className="form-group row">
                             <label className="col-sm-2 col-form-label" for="recipeeimg">Image URL</label>
-                            <input id="recipeeimg" type="url" className="col-sm-10 form-control" name="url" onChange={this.changeState} />
+                            <input id="recipeeimg" type="url" className="col-sm-10 form-control" name="url" value={this.state.img} onChange={this.changeState} />
                         </div><br/>
                         <div className="form-group row">
                             <label className="col-sm-2 col-form-label" for="recipeename">Instructions</label>
-                            <textarea id="recipeinstr" type="text" className="col-sm-10 form-control" name="instr" placeholder="Seperate each instructions with commas" onChange={this.changeState} />
+                            <textarea id="recipeinstr" type="text" className="col-sm-10 form-control" name="instr" value={this.state.instr.join()} placeholder="Seperate each instructions with commas" onChange={this.changeState} />
                         </div>
                         <input type="submit" className="btn btn-primary" value="Submit" />
                     </form>
